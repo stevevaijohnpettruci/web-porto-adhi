@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+:root {
+  --clr-bg: #080809;
+  --clr-surface: #111113;
+  --clr-surface-2: #19191c;
+  --clr-accent: #00D4FF;
+  --clr-accent-dim: rgba(0, 212, 255, 0.12);
+  --clr-text: #F0F0F2;
+  --clr-muted: rgba(255, 255, 255, 0.45);
+  --clr-border: rgba(255, 255, 255, 0.07);
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+html.light {
+  --clr-bg: #eeeeee;
+  --clr-surface: #FFFFFF;
+  --clr-surface-2: #F1F1F3;
+  --clr-accent: #0092B8;
+  --clr-accent-dim: rgba(0, 146, 184, 0.1);
+  --clr-text: #0B0B0D;
+  --clr-muted: rgba(0, 0, 0, 0.5);
+  --clr-border: rgba(0, 0, 0, 0.08);
+}
+
+html {
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+}
+
+/* ── Light mode overrides ──────────────────────────────────────────────
+   The rest of the app was built with literal `white/opacity` Tailwind
+   utilities (text-white/50, border-white/10, bg-white/5, etc). Those
+   compile to a fixed white color, so they don't react to the CSS
+   variables above. These rules re-map every such utility that's
+   actually used in the app to a dark, theme-appropriate equivalent
+   whenever `html.light` is active. */
+html.light .bg-white\/5 { background-color: rgba(0, 0, 0, 0.04) !important; }
+
+html.light .border-white\/5 { border-color: rgba(0, 0, 0, 0.08) !important; }
+html.light .border-white\/10 { border-color: rgba(0, 0, 0, 0.12) !important; }
+html.light .border-white\/15 { border-color: rgba(0, 0, 0, 0.16) !important; }
+html.light .border-white\/20 { border-color: rgba(0, 0, 0, 0.2) !important; }
+html.light .border-white\/30 { border-color: rgba(0, 0, 0, 0.28) !important; }
+
+html.light .text-white\/20 { color: rgba(0, 0, 0, 0.35) !important; }
+html.light .text-white\/30 { color: rgba(0, 0, 0, 0.45) !important; }
+html.light .text-white\/35 { color: rgba(0, 0, 0, 0.5) !important; }
+html.light .text-white\/40 { color: rgba(0, 0, 0, 0.55) !important; }
+html.light .text-white\/45 { color: rgba(0, 0, 0, 0.6) !important; }
+html.light .text-white\/50 { color: rgba(0, 0, 0, 0.62) !important; }
+html.light .text-white\/55 { color: rgba(0, 0, 0, 0.65) !important; }
+html.light .text-white\/60 { color: rgba(0, 0, 0, 0.68) !important; }
+html.light .text-white\/65 { color: rgba(0, 0, 0, 0.72) !important; }
+html.light .text-white\/80 { color: rgba(0, 0, 0, 0.85) !important; }
+
+html.light .hover\:text-white:hover { color: rgba(0, 0, 0, 0.9) !important; }
+
+/* Hero/detail-page gradient overlays and dark accent-on-button text stay
+   readable across themes since the accent color itself keeps enough
+   contrast, but the pure-black wash under project images should soften
+   in light mode so photos don't look muddy. */
+html.light img + .bg-gradient-to-t.from-black\/80 {
+  --tw-gradient-from: rgb(0 0 0 / 0.55) var(--tw-gradient-from-position);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(0,212,255,0.8); }
+  50% { opacity: 0.7; box-shadow: 0 0 20px rgba(0,212,255,1); }
+}
+
+.available-dot {
+  animation: pulse-glow 2.4s ease-in-out infinite;
+}
+
+.shape-orbit {
+  animation: spin-slow 32s linear infinite;
+  transform-origin: 240px 240px;
+}
