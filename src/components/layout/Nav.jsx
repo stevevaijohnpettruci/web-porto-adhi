@@ -152,7 +152,7 @@ function Nav({ onLogoClick, showBack, onBack }) {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="mailto:adhinurramadan49@gmail.com"
+              href="https://wa.me/6287832282111"
               className="hidden sm:inline-block font-[var(--font-body)] text-sm font-medium text-[#080809] bg-[var(--clr-accent)] px-[22px] py-[10px] rounded-full no-underline tracking-tight transition-colors duration-300 hover:bg-[#33DCFF] hover:shadow-[0_12px_32px_rgba(0,212,255,0.28)]"
             >
               {t('nav.getInTouch')}
