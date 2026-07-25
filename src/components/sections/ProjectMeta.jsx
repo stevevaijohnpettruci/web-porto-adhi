@@ -1,3 +1,4 @@
+import { label } from 'framer-motion/client';
 import { useLanguage } from '../../context/LanguageContext';
 import { motion } from 'framer-motion';
 
@@ -48,6 +49,23 @@ function ProjectMeta({ project }) {
             value: project.services?.join(', '),
           },
           {
+            id: 'review-url',
+            label: t('Review URL') || 'Review URL',
+            // Render JSX link jika project.url tersedia
+            value: project.url ? (
+              <a 
+                href={project.url} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white hover:text-gray-300 underline underline-offset-4 decoration-white/30 hover:decoration-white transition-all duration-300"
+              >
+                {project.urlText || 'Visit Link ↗'}
+              </a>
+            ) : (
+              <span className="text-white/40">-</span> // Fallback jika tidak ada link
+            )
+          },
+          {
             id: 'tech',
             label: t('Tech Stack') || 'Tech Stack',
             value: project.tech?.join(', '),
@@ -57,9 +75,9 @@ function ProjectMeta({ project }) {
             <p className="font-[var(--font-body)] text-[11px] font-medium text-white/30 tracking-widest uppercase m-0 mb-3">
               {item.label}
             </p>
-            <p className="font-[var(--font-body)] text-[15px] text-white/80 leading-relaxed m-0">
+            <div className="font-[var(--font-body)] text-[15px] text-white/80 leading-relaxed m-0">
               {item.value}
-            </p>
+            </div>
           </motion.div>
         ))}
       </div>

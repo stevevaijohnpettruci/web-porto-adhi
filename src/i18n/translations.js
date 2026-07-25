@@ -41,7 +41,7 @@ export const translations = {
         components: 30,
         satisfaction: 94,
       },
-      greenedu: {
+      wildlens: {
         category: 'AR Educational App',
         role: 'AR / Unity Developer',
         timeline: '3 weeks',
@@ -52,34 +52,14 @@ export const translations = {
           'Unity Development',
         ],
         tagline:
-          'An interactive Augmented Reality application supporting flora research — mapping and introducing campus plant life through immersive 3D visualization.',
+          'An interactive Augmented Reality application supporting wildlife education through immersive 3D fauna visualization.',
         challenge:
-          'The joint research collaboration needed an engaging and realistic way to visualize campus flora data, as the initial 3D models lacked the detailed textures required for accurate botanical representation.',
+          'The joint research collaboration needed an engaging and realistic way to visualize wild animals, as the initial 3D models lacked the detailed textures required for accurate fauna representation.',
         solution:
-          'Built a real-time AR application using Unity and Vuforia. Re-textured 3D flora assets to create a highly realistic visualization, successfully supporting the international research collaboration between Universitas Galuh and MAHSA University, Malaysia.',
+          'Built a real-time AR application using Unity and Vuforia. Re-textured 3D fauna assets to create highly realistic visualizations of wild animals, successfully supporting the international joint research project between Universitas Galuh and MAHSA University, Malaysia.',
         hours: 672,
         components: 10,
         satisfaction: 95,
-      },
-      bambootown: {
-        category: 'Band Merchandise & Catalog Website',
-        role: 'Fullstack Developer',
-        timeline: '12 weeks',
-        services: [
-          'Full-Stack Development',
-          'Database Design',
-          'MVC Architecture',
-          'Responsive Development',
-        ],
-        tagline:
-          'A complete merchandise and release catalog platform for a band — organized, dynamic, and built to scale with every new drop.',
-        challenge:
-          "The band needed a single, reliable home for its full catalog of merchandise and releases — one that could be updated quickly and never break on a fan's phone.",
-        solution:
-          "Built on Laravel 12's MVC architecture with an efficient database schema for products and releases, enabling dynamic catalog updates and a fully responsive experience across devices.",
-        hours: 1680,
-        components: 40,
-        satisfaction: 96,
       },
     },
     nav: {
@@ -222,7 +202,7 @@ export const translations = {
         components: 30,
         satisfaction: 94,
       },
-      greenedu: {
+      wildlens: {
         category: 'Aplikasi Edukasi AR',
         role: 'AR / Unity Developer',
         timeline: '3 minggu',
@@ -233,34 +213,14 @@ export const translations = {
           'Pengembangan Unity',
         ],
         tagline:
-          'Aplikasi Augmented Reality interaktif untuk mendukung penelitian flora — memetakan dan mengenalkan tanaman kampus melalui visualisasi 3D yang imersif.',
+          'Aplikasi Augmented Reality interaktif untuk mendukung edukasi satwa liar melalui visualisasi fauna 3D yang imersif.',
         challenge:
-          'Kolaborasi riset membutuhkan cara yang realistis untuk memvisualisasikan data flora kampus, di mana aset 3D mentah sebelumnya belum memiliki detail tekstur yang memadai untuk representasi botani yang akurat.',
+          'Kolaborasi riset membutuhkan cara yang realistis untuk memvisualisasikan hewan liar, di mana aset 3D mentah sebelumnya belum memiliki detail tekstur yang memadai untuk representasi fauna yang akurat.',
         solution:
-          'Membangun aplikasi AR real-time dengan Unity dan Vuforia. Melakukan re-texturing pada aset flora 3D agar visualisasi di dalam AR terlihat jauh lebih detail dan realistis, berhasil mendukung proyek kolaborasi riset internasional antara Universitas Galuh dan MAHSA University, Malaysia.',
+          'Membangun aplikasi AR real-time dengan Unity dan Vuforia. Melakukan re-texturing pada aset fauna 3D agar visualisasi model hewan liar di dalam AR terlihat jauh lebih detail dan realistis, berhasil mendukung proyek kolaborasi riset internasional antara Universitas Galuh dan MAHSA University, Malaysia.',
         hours: 672,
         components: 10,
         satisfaction: 95,
-      },
-      bambootown: {
-        category: 'Website Katalog & Merchandise Band',
-        role: 'Fullstack Developer',
-        timeline: '12 minggu',
-        services: [
-          'Pengembangan Full-Stack',
-          'Desain Database',
-          'Arsitektur MVC',
-          'Pengembangan Responsif',
-        ],
-        tagline:
-          'Platform katalog rilis dan merchandise lengkap untuk sebuah band — terorganisir, dinamis, dan dibangun untuk skala besar pada setiap rilis baru.',
-        challenge:
-          'Band ini membutuhkan satu tempat yang dapat diandalkan untuk seluruh katalog merchandise dan rilisannya — tempat yang dapat diperbarui dengan cepat dan tidak pernah rusak di ponsel penggemar.',
-        solution:
-          'Dibangun di atas arsitektur MVC Laravel 12 dengan skema database yang efisien untuk produk dan rilisan, memungkinkan pembaruan katalog dinamis dan pengalaman yang sepenuhnya responsif di seluruh perangkat.',
-        hours: 1680,
-        components: 40,
-        satisfaction: 96,
       },
     },
     nav: {

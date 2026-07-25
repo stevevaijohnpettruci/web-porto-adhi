@@ -79,7 +79,7 @@ function HeroSection({ onViewWork }) {
               {t('hero.viewWork')}
             </motion.button>
             <motion.a
-              href="#"
+              href="/CV Adhi Nur Ramadan Terbaru 2026 Updated Fix.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="font-[var(--font-body)] font-medium text-[15px] text-white/65 border border-white/15 px-8 py-4 rounded-full no-underline tracking-tight transition-colors duration-300 inline-block hover:border-white/30 hover:text-[var(--clr-text)]"
